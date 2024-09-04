@@ -43,11 +43,11 @@
 
                         <!-- galleria miniature -->
                         <div id="thumbnails" class="row justify-content-center">
-                            <div class="col"><img :src="imageList[0].image" alt="" class="img-fluid"></div>
-                            <div class="col"><img :src="imageList[1].image" alt="" class="img-fluid"></div>
-                            <div class="col"><img :src="imageList[2].image" alt="" class="img-fluid"></div>
-                            <div class="col"><img :src="imageList[3].image" alt="" class="img-fluid"></div>
-                            <div class="col"><img :src="imageList[4].image" alt="" class="img-fluid"></div>
+
+                            <div v-for="(image,index) in imageList" class="col">
+                                <img :src="imageList[index].image" alt="" class="img-fluid">
+                            </div>
+
                         </div>
                     </div>
                 </div>
