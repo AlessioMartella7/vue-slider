@@ -45,7 +45,8 @@
                         <div id="thumbnails" class="row justify-content-center">
 
                             <div v-for="(image,index) in imageList" class="col">
-                                <img :src="imageList[index].image" alt="" class="img-fluid">
+                                <img :src="imageList[index].image" alt="" class="img-fluid "
+                                    @click="setCurrentImg(index)">
                             </div>
 
                         </div>

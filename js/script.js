@@ -50,8 +50,13 @@ createApp({
         if(this.currentIndex <= 0)
             this.currentIndex = this.imageList.length -1;
         else this.currentIndex--;
-    }
+    },
     
+    //cambio immagine al click della thumbnail
+    setCurrentImg(index){
+       this.currentIndex = index;
+    },
+
   }
 
 }).mount('#app')
