@@ -53,6 +53,7 @@ right: 5px;
     width: 20%;
     border-radius: 20px;
     opacity: 50%;
+    object-fit: cover;
 }
 
 #thumbnails img:hover  {

@@ -27,18 +27,23 @@
                 <div class="row justify-content-center" id="carousel">
                     <div class="col-8">
                         <!-- freccia sinistra -->
-                        <i id="prev" class="bi bi-caret-left fs-3 text-white"></i>
+                        <i id="prev" class="bi bi-caret-left fs-3 text-white" @click="prevImg()"></i>
 
                         <!-- galleria immagini -->
                         <div id="gallery">
                             <img :src="imageList[currentIndex].image" alt="" class="img-fluid">
+                            <div class="img-title">
+                                <h5>{{imageList[currentIndex].title}}</h5>
+                                <h6>{{imageList[currentIndex].text}}</h6>
+                            </div>
                         </div>
 
                         <!-- freccia destra -->
-                        <i id="next" class="bi bi-caret-right fs-3 text-white"></i>
+                        <i id="next" class="bi bi-caret-right fs-3 text-white" @click="nextImg()"></i>
 
                         <!-- galleria miniature -->
-                        <div id="thumbnails" class="d-flex justify-content-between gap-3 mt-3">
+                        <div id="thumbnails" class="d-flex justify-content-between gap-3">
+                            <img :src="imageList[currentIndex].image" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
