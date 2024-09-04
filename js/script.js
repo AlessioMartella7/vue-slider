@@ -40,13 +40,18 @@ createApp({
   methods: {
     // freccia a destra
     nextImg(){
-        this.currentIndex++;
+        if(this.currentIndex >= this.imageList.length -1)
+            this.currentIndex = 0;
+        else this.currentIndex++;
     },
 
     //freccia a sinistra
     prevImg(){
-        this.currentIndex--;
+        if(this.currentIndex <= 0)
+            this.currentIndex = this.imageList.length -1;
+        else this.currentIndex--;
     }
+    
   }
 
 }).mount('#app')

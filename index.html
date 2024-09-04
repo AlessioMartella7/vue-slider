@@ -42,13 +42,18 @@
                         <i id="next" class="bi bi-caret-right fs-3 text-white" @click="nextImg()"></i>
 
                         <!-- galleria miniature -->
-                        <div id="thumbnails" class="d-flex justify-content-between gap-3">
-                            <img :src="imageList[currentIndex].image" alt="" class="img-fluid">
+                        <div id="thumbnails" class="row justify-content-center">
+                            <div class="col"><img :src="imageList[0].image" alt="" class="img-fluid"></div>
+                            <div class="col"><img :src="imageList[1].image" alt="" class="img-fluid"></div>
+                            <div class="col"><img :src="imageList[2].image" alt="" class="img-fluid"></div>
+                            <div class="col"><img :src="imageList[3].image" alt="" class="img-fluid"></div>
+                            <div class="col"><img :src="imageList[4].image" alt="" class="img-fluid"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+    </div>
+    </main>
 
     </div>
     <!-- JS -->
