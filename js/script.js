@@ -59,11 +59,13 @@ createApp({
 
   },
 
+    //faccio partire un timer ogni 3 secondi per cambiare immagine
   created (){
-    setInterval(() => {
+    const timer = setInterval(() => {
     this.nextImg()
     },3000);
 
-  }
+  },
+
   
 }).mount('#app')
